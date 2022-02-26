@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\PC\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\PC\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Inputs.-424229096.00" t="ExcludeRecursive" />
+    <e p="C:\Users\PC\RiderProjects\Inputs" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Common" t="Include">
+        <e p="CustomCollider.cs" t="Include" />
+        <e p="Timer.cs" t="Include" />
+      </e>
+      <e p="Inputs.csproj" t="IncludeRecursive" />
+      <e p="Inputs.sln" t="IncludeFlat" />
+      <e p="IValues" t="Include">
+        <e p="DefaultValue.cs" t="Include" />
+        <e p="IValue.cs" t="Include" />
+        <e p="Numbers.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Predicates" t="Include">
+        <e p="And.cs" t="Include" />
+        <e p="IPredicate.cs" t="Include" />
+        <e p="MultipleAnd.cs" t="Include" />
+        <e p="MultipleOr.cs" t="Include" />
+        <e p="MultiplePredicateDecorator.cs" t="Include" />
+        <e p="Or.cs" t="Include" />
+        <e p="PredicateDecorator.cs" t="Include" />
+      </e>
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Unity" t="Include">
+        <e p="Axis" t="Include">
+          <e p="Decorators" t="Include">
+            <e p="AxisDecorator.cs" t="Include" />
+            <e p="ConstantClampAxis.cs" t="Include" />
+            <e p="FluidClampAxis.cs" t="Include" />
+            <e p="Range.cs" t="Include" />
+          </e>
+          <e p="IAxis.cs" t="Include" />
+          <e p="Joysticks" t="Include">
+            <e p="JoystickAxis.cs" t="Include" />
+          </e>
+          <e p="Keyboards" t="Include">
+            <e p="ConstantRawKeyAxis.cs" t="Include" />
+            <e p="ConstantSmoothKeyAxis.cs" t="Include" />
+            <e p="FluidRawKeyAxis.cs" t="Include" />
+            <e p="FluidSmoothKeyAxis.cs" t="Include" />
+          </e>
+          <e p="Mouses" t="Include">
+            <e p="UnClampedMouseAxis.cs" t="Include" />
+          </e>
+          <e p="Swipes" t="Include">
+            <e p="UnClampedSwipeAxis.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Direction" t="Include">
+          <e p="AxisDirection.cs" t="Include" />
+          <e p="ConstantDirection.cs" t="Include" />
+          <e p="IDirection.cs" t="Include" />
+          <e p="MouseDirection.cs" t="Include" />
+        </e>
+        <e p="Keys" t="Include">
+          <e p="IKey.cs" t="Include" />
+          <e p="Key.cs" t="Include" />
+          <e p="KeyDown.cs" t="Include" />
+          <e p="KeyUp.cs" t="Include" />
+          <e p="Mouse.cs" t="Include" />
+          <e p="MouseDown.cs" t="Include" />
+          <e p="MouseUp.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

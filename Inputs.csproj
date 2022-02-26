@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{D0D7E2D9-65F7-4CA1-B7F6-645215258E9B}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Inputs</RootNamespace>
+        <AssemblyName>Inputs</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine">
+            <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Common\CustomCollider.cs" />
+        <Compile Include="Common\Timer.cs" />
+        <Compile Include="IValues\DefaultValue.cs" />
+        <Compile Include="IValues\IValue.cs" />
+        <Compile Include="IValues\Numbers.cs" />
+        <Compile Include="Predicates\And.cs" />
+        <Compile Include="Predicates\IPredicate.cs" />
+        <Compile Include="Predicates\MultipleAnd.cs" />
+        <Compile Include="Predicates\MultipleOr.cs" />
+        <Compile Include="Predicates\MultiplePredicateDecorator.cs" />
+        <Compile Include="Predicates\Or.cs" />
+        <Compile Include="Predicates\PredicateDecorator.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Unity\Axis\Decorators\AxisDecorator.cs" />
+        <Compile Include="Unity\Axis\Decorators\ConstantClampAxis.cs" />
+        <Compile Include="Unity\Axis\Decorators\FluidClampAxis.cs" />
+        <Compile Include="Unity\Axis\Decorators\Range.cs" />
+        <Compile Include="Unity\Axis\IAxis.cs" />
+        <Compile Include="Unity\Axis\Joysticks\JoystickAxis.cs" />
+        <Compile Include="Unity\Axis\Keyboards\ConstantRawKeyAxis.cs" />
+        <Compile Include="Unity\Axis\Keyboards\ConstantSmoothKeyAxis.cs" />
+        <Compile Include="Unity\Axis\Keyboards\FluidRawKeyAxis.cs" />
+        <Compile Include="Unity\Axis\Keyboards\FluidSmoothKeyAxis.cs" />
+        <Compile Include="Unity\Axis\Mouses\UnClampedMouseAxis.cs" />
+        <Compile Include="Unity\Axis\Swipes\UnClampedSwipeAxis.cs" />
+        <Compile Include="Unity\Direction\AxisDirection.cs" />
+        <Compile Include="Unity\Direction\ConstantDirection.cs" />
+        <Compile Include="Unity\Direction\IDirection.cs" />
+        <Compile Include="Unity\Direction\MouseDirection.cs" />
+        <Compile Include="Unity\Keys\IKey.cs" />
+        <Compile Include="Unity\Keys\Key.cs" />
+        <Compile Include="Unity\Keys\KeyDown.cs" />
+        <Compile Include="Unity\Keys\KeyUp.cs" />
+        <Compile Include="Unity\Keys\Mouse.cs" />
+        <Compile Include="Unity\Keys\MouseDown.cs" />
+        <Compile Include="Unity\Keys\MouseUp.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
