@@ -4,7 +4,7 @@ namespace Inputs.Predicates
 {
     public abstract class MultiplePredicateDecorator : IPredicate
     {
-        protected IEnumerable<IPredicate> Childs;
+        protected readonly IEnumerable<IPredicate> Childs;
 
         protected MultiplePredicateDecorator(IEnumerable<IPredicate> childs)
         {

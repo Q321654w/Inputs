@@ -40,8 +40,6 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Common\CustomCollider.cs" />
-        <Compile Include="Common\Timer.cs" />
         <Compile Include="IValues\DefaultValue.cs" />
         <Compile Include="IValues\IValue.cs" />
         <Compile Include="IValues\Numbers.cs" />

@@ -2,7 +2,7 @@
 {
     public abstract class PredicateDecorator : IPredicate
     {
-        protected IPredicate Child;
+        protected readonly IPredicate Child;
 
         protected PredicateDecorator(IPredicate child)
         {

@@ -2,7 +2,7 @@
 {
     public class And : PredicateDecorator
     {
-        private IPredicate _predicate;
+        private readonly IPredicate _predicate;
         
         public And(IPredicate child, IPredicate predicate) : base(child)
         {
