@@ -2,8 +2,13 @@
 {
     public abstract class AxisDecorator : IAxis
     {
-        protected IAxis ChildAxis;
+        protected readonly IAxis ChildAxis;
 
-        public abstract float Value();
+        public AxisDecorator(IAxis childAxis)
+        {
+            ChildAxis = childAxis;
+        }
+
+        public abstract float Evaluate();
     }
 }

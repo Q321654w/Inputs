@@ -1,21 +1,20 @@
 ﻿using UnityEngine;
+using Values;
 
 namespace Inputs.Unity.Direction
 {
     public class ConstantDirection : IDirection<Vector2>
     {
-        private readonly float _xDirection;
-        private readonly float _yDirection;
+        private readonly IValue<Vector2> _value;
 
-        public ConstantDirection(float xDirection, float yDirection)
+        public ConstantDirection(IValue<Vector2> value)
         {
-            _xDirection = xDirection;
-            _yDirection = yDirection;
+            _value = value;
         }
 
         public Vector2 Evaluate()
         {
-            return new Vector2(_xDirection, _yDirection);
+            return _value.Evaluate();
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Inputs.Unity.Axis.Joysticks
             _axisName = axisName;
         }
 
-        public float Value()
+        public float Evaluate()
         {
             return Input.GetAxis(_axisName);
         }

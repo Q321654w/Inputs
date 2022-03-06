@@ -1,32 +1,26 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-namespace Inputs.Unity.Axis.Swipes
+namespace Inputs.Unity.Direction.Swipe
 {
-    public class UnClampedSwipeAxis : IAxis
+    public class SwipeDirection : IDirection<Vector2>
     {
         private readonly int _touchIndex;
 
-        private readonly Vector2 _axis;
-        
-        private Vector2 _previousValue;
         private Vector2 _touchStartPosition;
-        
-        private bool _hasLastValue;
+        private Vector2 _previousValue;
         private bool _hasTouchStartValue;
 
-        public UnClampedSwipeAxis(Vector2 axis) : this(0, axis)
+        public SwipeDirection() : this(0)
         {
         }
 
-        public UnClampedSwipeAxis(int touchIndex, Vector2 axis)
+        public SwipeDirection(int touchIndex)
         {
-            _hasLastValue = false;
             _previousValue = new Vector2();
             _touchIndex = touchIndex;
-            _axis = axis;
         }
 
-        public float Evaluate()
+        public Vector2 Evaluate()
         {
             var touches = Input.touches;
 
@@ -36,22 +30,22 @@ namespace Inputs.Unity.Axis.Swipes
             {
                 var currentValue = _previousValue - _touchStartPosition;
                 _hasTouchStartValue = false;
-                return Vector3.Dot(_axis, currentValue);
+                return currentValue;
             }
 
             var currentPosition = touches[_touchIndex].position;
-
+            
             if (_hasTouchStartValue)
             {
                 _previousValue = currentPosition;
-                return 0;
+                return new Vector2(0, 0);
             }
-
+            
             _hasTouchStartValue = true;
             _touchStartPosition = currentPosition;
             _previousValue = currentPosition;
-
-            return 0;
+            
+            return new Vector2(0, 0);
         }
 
         private bool HasNotTouch(Touch[] touches)

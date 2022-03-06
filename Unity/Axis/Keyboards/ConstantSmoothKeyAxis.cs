@@ -7,43 +7,57 @@ namespace Inputs.Unity.Axis.Keyboards
 {
     public class ConstantSmoothKeyAxis : IAxis
     {
-        private readonly IKey _negative;
-        private readonly IKey _positive;
+        private readonly IKey _negativeKey;
+        private readonly IKey _positiveKey;
 
         private readonly Stopwatch _stopwatch;
 
         private const int MILLISECOND_IN_SECOND = 1000;
-        private const float POSITIVE = 1;
-        private const float NEGATIVE = -1;
-        private const float NULL = 0;
+        private readonly float _positive;
+        private readonly float _negative;
+        private readonly float _null;
 
-        public ConstantSmoothKeyAxis(KeyCode negative, KeyCode positive) : this(new Key(negative), new Key(positive))
-        {
-        }
-        
-        public ConstantSmoothKeyAxis(IKey negative, IKey positive) : this(negative, positive, new Stopwatch())
+        public ConstantSmoothKeyAxis(KeyCode negativeCode,
+            KeyCode positiveCode) : this(-1, 1, 0, positiveCode, negativeCode)
         {
         }
 
-        public ConstantSmoothKeyAxis(IKey negative, IKey positive, Stopwatch stopwatch)
+        public ConstantSmoothKeyAxis(float negative,
+            float positive,
+            float nullValue,
+            KeyCode negativeCode,
+            KeyCode positiveCode) : this(negative, positive, nullValue, new Key(negativeCode), new Key(positiveCode))
+        {
+        }
+
+        public ConstantSmoothKeyAxis(float negative, float positive, float nullValue, IKey negativeKey,
+            IKey positiveKey) : this(negative, positive, nullValue, negativeKey, positiveKey, new Stopwatch())
+        {
+        }
+
+        public ConstantSmoothKeyAxis(float negative, float positive, float nullValue, IKey negativeKey,
+            IKey positiveKey, Stopwatch stopwatch)
         {
             _negative = negative;
             _positive = positive;
+            _null = nullValue;
+            _negativeKey = negativeKey;
+            _positiveKey = positiveKey;
             _stopwatch = stopwatch;
         }
 
-        public float Value()
+        public float Evaluate()
         {
-            if (_negative.Execute())
-                CalculateInput(NEGATIVE);
+            if (_negativeKey.Evaluate())
+                return CalculateInput(_negative);
 
-            if (_positive.Execute())
-                return CalculateInput(POSITIVE);
-            
+            if (_positiveKey.Evaluate())
+                return CalculateInput(_positive);
+
             _stopwatch.Stop();
             _stopwatch.Reset();
 
-            return NULL;
+            return _null;
         }
 
         private float CalculateInput(float factor)
@@ -58,7 +72,7 @@ namespace Inputs.Unity.Axis.Keyboards
         private float ClampedSeconds()
         {
             var seconds = _stopwatch.ElapsedMilliseconds / MILLISECOND_IN_SECOND;
-            return Math.Max(Math.Min(seconds, 0), 1);
+            return Math.Max(Math.Min(seconds, _positive), _null);
         }
 
         private void RunStopWatch()

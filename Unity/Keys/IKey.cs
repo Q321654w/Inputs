@@ -1,9 +1,9 @@
-﻿using Inputs.Predicates;
+﻿using Predicate;
 
 namespace Inputs.Unity.Keys
 {
     public interface IKey : IPredicate
     {
-        bool Execute();
+        new bool Evaluate();
     }
 }

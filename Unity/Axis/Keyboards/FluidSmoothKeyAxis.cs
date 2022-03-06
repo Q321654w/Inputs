@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
-using Inputs.IValues;
 using Inputs.Unity.Keys;
 using UnityEngine;
+using Values;
 
 namespace Inputs.Unity.Axis.Keyboards
 {
@@ -42,12 +42,12 @@ namespace Inputs.Unity.Axis.Keyboards
             _stopwatch = stopwatch;
         }
 
-        public float Value()
+        public float Evaluate()
         {
-            if (_negative.Execute())
-                CalculateInput(_numbers.Negative());
+            if (_negative.Evaluate())
+                return CalculateInput(_numbers.Negative());
 
-            if (_positive.Execute())
+            if (_positive.Evaluate())
                 return CalculateInput(_numbers.Positive());
 
             _stopwatch.Stop();
@@ -68,7 +68,7 @@ namespace Inputs.Unity.Axis.Keyboards
         private float ClampedSeconds()
         {
             var seconds = _stopwatch.ElapsedMilliseconds / MILLISECOND_IN_SECOND;
-            return Math.Max(Math.Min(seconds, 0), 1);
+            return Math.Max(Math.Min(seconds, 1), 0);
         }
 
         private void RunStopwatch()

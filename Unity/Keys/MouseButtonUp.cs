@@ -2,18 +2,18 @@
 
 namespace Inputs.Unity.Keys
 {
-    public class Mouse : IKey
+    public class MouseButtonUp : IKey
     {
         private readonly int _mouseButton;
 
-        public Mouse(int mouseButton)
+        public MouseButtonUp(int mouseButton)
         {
             _mouseButton = mouseButton;
         }
 
-        public bool Execute()
+        public bool Evaluate()
         {
-            return Input.GetMouseButton(_mouseButton);
+            return Input.GetMouseButtonUp(_mouseButton);
         }
     }
 }

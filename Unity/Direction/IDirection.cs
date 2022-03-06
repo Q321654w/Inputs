@@ -1,7 +1,9 @@
-﻿namespace Inputs.Unity.Direction
+﻿using Values;
+
+namespace Inputs.Unity.Direction
 {
-    public interface IDirection<T>
+    public interface IDirection<T> : IValue<T>
     {
-        T Evaluate();
+        new T Evaluate();
     }
 }

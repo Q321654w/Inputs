@@ -3,7 +3,7 @@ using Inputs.Unity.Axis.Keyboards;
 using Inputs.Unity.Keys;
 using UnityEngine;
 
-namespace Inputs.Unity.Direction
+namespace Inputs.Unity.Direction.Axis
 {
     public class AxisDirection : IDirection<Vector2>
     {
@@ -30,8 +30,8 @@ namespace Inputs.Unity.Direction
 
         public Vector2 Evaluate()
         {
-            var xDirection = _xAxis.Value();
-            var yDirection = _yAxis.Value();
+            var xDirection = _xAxis.Evaluate();
+            var yDirection = _yAxis.Evaluate();
 
             return new Vector2(xDirection, yDirection);
         }

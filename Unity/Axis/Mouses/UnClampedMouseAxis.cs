@@ -10,19 +10,19 @@ namespace Inputs.Unity.Axis.Mouses
 
         public UnClampedMouseAxis(Vector3 axis)
         {
-            _previousValue = new Vector3();
+            _previousValue = Input.mousePosition;
             _axis = axis;
         }
         
-        public float Value()
+        public float Evaluate()
         {
-            var currentValue = Input.mousePosition;
-            var projection = Vector3.Project(currentValue, _axis);
+            var currentPosition = Input.mousePosition;
+            var currentValue = currentPosition - _previousValue;
+            var projection = Vector3.Dot(_axis, currentValue);
+            
+            _previousValue = currentPosition;
 
-            var distance = Vector2.Distance(projection, _previousValue);
-            _previousValue = currentValue;
-
-            return distance;
+            return projection;
         }
     }
 }

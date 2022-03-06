@@ -5,32 +5,49 @@ namespace Inputs.Unity.Axis.Keyboards
 {
     public class ConstantRawKeyAxis : IAxis
     {
-        private readonly IKey _negative;
-        private readonly IKey _positive;
+        private readonly IKey _negativeKey;
+        private readonly IKey _positiveKey;
+
+        private readonly float _positive;
+        private readonly float _negative;
+        private readonly float _null;
+
+        public ConstantRawKeyAxis(KeyCode negativeCode, KeyCode positiveCode) : this(
+            -1, 
+            1, 
+            0, 
+            new Key(negativeCode), 
+            new Key(positiveCode))
+        {
+        }
         
-        private const float POSITIVE = 1;
-        private const float NEGATIVE = -1;
-        private const float NULL = 0;
-
-        public ConstantRawKeyAxis(KeyCode negative, KeyCode positive) : this(new Key(negative), new Key(positive))
+        public ConstantRawKeyAxis(IKey negativeKey, IKey positiveKey) : this(
+            -1, 
+            1, 
+            0, 
+            negativeKey,
+            positiveKey)
         {
         }
 
-        public ConstantRawKeyAxis(IKey negative, IKey positive)
+        public ConstantRawKeyAxis(float negative, float positive, float nullValue, IKey negativeKey, IKey positiveKey)
         {
-            _negative = negative;
             _positive = positive;
+            _negative = negative;
+            _null = nullValue;
+            _negativeKey = negativeKey;
+            _positiveKey = positiveKey;
         }
 
-        public float Value()
+        public float Evaluate()
         {
-            if (_negative.Execute())
-                return NEGATIVE;
-            
-            if (_positive.Execute())
-                return POSITIVE;
+            if (_negativeKey.Evaluate())
+                return _negative;
 
-            return NULL;
+            if (_positiveKey.Evaluate())
+                return _positive;
+
+            return _null;
         }
     }
 }

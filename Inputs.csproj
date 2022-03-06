@@ -29,32 +29,27 @@
         <OutputPath>bin\Release\</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
+        <WarningLevel>2</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Predicate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\Predicate\bin\Debug\Predicate.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Xml" />
         <Reference Include="UnityEngine">
             <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
         </Reference>
+        <Reference Include="Values, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\Values\bin\Debug\Values.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="IValues\DefaultValue.cs" />
-        <Compile Include="IValues\IValue.cs" />
-        <Compile Include="IValues\Numbers.cs" />
-        <Compile Include="Predicates\And.cs" />
-        <Compile Include="Predicates\IPredicate.cs" />
-        <Compile Include="Predicates\MultipleAnd.cs" />
-        <Compile Include="Predicates\MultipleOr.cs" />
-        <Compile Include="Predicates\MultiplePredicateDecorator.cs" />
-        <Compile Include="Predicates\Or.cs" />
-        <Compile Include="Predicates\PredicateDecorator.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Unity\Axis\Decorators\AxisDecorator.cs" />
         <Compile Include="Unity\Axis\Decorators\ConstantClampAxis.cs" />
         <Compile Include="Unity\Axis\Decorators\FluidClampAxis.cs" />
-        <Compile Include="Unity\Axis\Decorators\Range.cs" />
         <Compile Include="Unity\Axis\IAxis.cs" />
         <Compile Include="Unity\Axis\Joysticks\JoystickAxis.cs" />
         <Compile Include="Unity\Axis\Keyboards\ConstantRawKeyAxis.cs" />
@@ -63,17 +58,21 @@
         <Compile Include="Unity\Axis\Keyboards\FluidSmoothKeyAxis.cs" />
         <Compile Include="Unity\Axis\Mouses\UnClampedMouseAxis.cs" />
         <Compile Include="Unity\Axis\Swipes\UnClampedSwipeAxis.cs" />
-        <Compile Include="Unity\Direction\AxisDirection.cs" />
+        <Compile Include="Unity\Direction\Axis\AxisDirection.cs" />
         <Compile Include="Unity\Direction\ConstantDirection.cs" />
+        <Compile Include="Unity\Direction\Decorator\ConstantClampDirection.cs" />
+        <Compile Include="Unity\Direction\Decorator\DirectionDecorator.cs" />
+        <Compile Include="Unity\Direction\Decorator\FluidClampDirection.cs" />
         <Compile Include="Unity\Direction\IDirection.cs" />
-        <Compile Include="Unity\Direction\MouseDirection.cs" />
+        <Compile Include="Unity\Direction\Mouse\MouseDirection.cs" />
+        <Compile Include="Unity\Direction\Swipe\SwipeDirection.cs" />
         <Compile Include="Unity\Keys\IKey.cs" />
         <Compile Include="Unity\Keys\Key.cs" />
         <Compile Include="Unity\Keys\KeyDown.cs" />
         <Compile Include="Unity\Keys\KeyUp.cs" />
-        <Compile Include="Unity\Keys\Mouse.cs" />
-        <Compile Include="Unity\Keys\MouseDown.cs" />
-        <Compile Include="Unity\Keys\MouseUp.cs" />
+        <Compile Include="Unity\Keys\MouseButton.cs" />
+        <Compile Include="Unity\Keys\MouseButtonDown.cs" />
+        <Compile Include="Unity\Keys\MouseButtonUp.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

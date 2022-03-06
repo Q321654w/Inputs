@@ -1,6 +1,6 @@
-﻿using Inputs.IValues;
-using Inputs.Unity.Keys;
+﻿using Inputs.Unity.Keys;
 using UnityEngine;
+using Values;
 
 namespace Inputs.Unity.Axis.Keyboards
 {
@@ -30,12 +30,12 @@ namespace Inputs.Unity.Axis.Keyboards
             _numbers = numbers;
         }
 
-        public float Value()
+        public float Evaluate()
         {
-            if (_negative.Execute())
+            if (_negative.Evaluate())
                 return _numbers.Negative();
             
-            if (_positive.Execute())
+            if (_positive.Evaluate())
                 return _numbers.Positive();
 
             return _numbers.Null();

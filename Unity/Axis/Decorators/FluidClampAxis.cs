@@ -1,19 +1,24 @@
 ﻿using System;
+using Values;
 
 namespace Inputs.Unity.Axis.Decorators
 {
     public class FluidClampAxis : AxisDecorator
     {
-        private readonly Range<float> _numbers;
+        private readonly IRange<IValue<float>> _numbers;
 
-        public FluidClampAxis(Range<float> numbers)
+        public FluidClampAxis(IAxis childAxis, IRange<IValue<float>> numbers) : base(childAxis)
         {
             _numbers = numbers;
         }
 
-        public override float Value()
+        public override float Evaluate()
         {
-            return Math.Min(Math.Max(ChildAxis.Value(), _numbers.Max), _numbers.Min);
+            var value = ChildAxis.Evaluate();
+            var max = _numbers.Max.Evaluate();
+            var min = _numbers.Min.Evaluate();
+
+            return Math.Max(Math.Min(value, max), min);
         }
     }
 }

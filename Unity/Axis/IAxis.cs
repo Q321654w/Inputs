@@ -1,7 +1,9 @@
-﻿namespace Inputs.Unity.Axis
+﻿using Values;
+
+namespace Inputs.Unity.Axis
 {
-    public interface IAxis
+    public interface IAxis : IValue<float>
     {
-        float Value();
+        new float Evaluate();
     }
 }

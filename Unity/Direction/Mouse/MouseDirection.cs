@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Inputs.Unity.Direction
+namespace Inputs.Unity.Direction.Mouse
 {
     public class MouseDirection : IDirection<Vector2>
     {
@@ -8,7 +8,7 @@ namespace Inputs.Unity.Direction
 
         public MouseDirection()
         {
-            _lastMousePosition = new Vector3();
+            _lastMousePosition = Input.mousePosition;
         }
 
         public Vector2 Evaluate()
