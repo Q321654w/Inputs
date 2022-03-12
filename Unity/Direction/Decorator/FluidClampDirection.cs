@@ -17,8 +17,8 @@ namespace Inputs.Unity.Direction.Decorator
         {
             var value = Child.Evaluate();
 
-            var max = _numbers.Max.Evaluate();
-            var min = _numbers.Min.Evaluate();
+            var max = _numbers.Max().Evaluate();
+            var min = _numbers.Min().Evaluate();
             
             var x = Math.Min(Math.Max(value.x, max), min);
             var y = Math.Min(Math.Max(value.y, max), min);

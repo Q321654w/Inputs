@@ -12,10 +12,11 @@ namespace Inputs.Unity.Axis.Keyboards
 
         private readonly Stopwatch _stopwatch;
 
-        private const int MILLISECOND_IN_SECOND = 1000;
         private readonly float _positive;
         private readonly float _negative;
         private readonly float _null;
+        
+        private const int MILLISECOND_IN_SECOND = 1000;
 
         public ConstantSmoothKeyAxis(KeyCode negativeCode,
             KeyCode positiveCode) : this(-1, 1, 0, positiveCode, negativeCode)

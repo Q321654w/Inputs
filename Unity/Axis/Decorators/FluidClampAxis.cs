@@ -15,8 +15,8 @@ namespace Inputs.Unity.Axis.Decorators
         public override float Evaluate()
         {
             var value = ChildAxis.Evaluate();
-            var max = _numbers.Max.Evaluate();
-            var min = _numbers.Min.Evaluate();
+            var max = _numbers.Max().Evaluate();
+            var min = _numbers.Min().Evaluate();
 
             return Math.Max(Math.Min(value, max), min);
         }
