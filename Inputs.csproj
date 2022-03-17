@@ -32,8 +32,8 @@
         <WarningLevel>2</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="Predicate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\Predicate\bin\Debug\Predicate.dll</HintPath>
+        <Reference Include="Collections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\Collections\Collections\bin\Debug\Collections.dll</HintPath>
         </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />

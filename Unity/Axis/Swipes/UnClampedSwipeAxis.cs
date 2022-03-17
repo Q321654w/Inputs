@@ -11,7 +11,6 @@ namespace Inputs.Unity.Axis.Swipes
         private Vector2 _previousValue;
         private Vector2 _touchStartPosition;
         
-        private bool _hasLastValue;
         private bool _hasTouchStartValue;
 
         public UnClampedSwipeAxis(Vector2 axis) : this(0, axis)
@@ -20,7 +19,6 @@ namespace Inputs.Unity.Axis.Swipes
 
         public UnClampedSwipeAxis(int touchIndex, Vector2 axis)
         {
-            _hasLastValue = false;
             _previousValue = new Vector2();
             _touchIndex = touchIndex;
             _axis = axis;

@@ -20,44 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7abe02-f35d-43bb-8940-05fc82d76823" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IValues/IRange.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity/Direction/Decorator/ConstantClampDirection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity/Direction/Decorator/DirectionDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity/Direction/Decorator/FluidClampDirection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity/Direction/Swipe/SwipeDirection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IValues/DefaultValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IValues/DefaultValue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IValues/IValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IValues/IValue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IValues/Numbers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IValues/Numbers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Inputs.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inputs.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Inputs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inputs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inputs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predicates/And.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Predicates/And.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predicates/IPredicate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Predicates/IPredicate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predicates/MultipleAnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Predicates/MultipleAnd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predicates/MultipleOr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Predicates/MultipleOr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predicates/MultiplePredicateDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Predicates/MultiplePredicateDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predicates/Or.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Predicates/Or.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predicates/PredicateDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Predicates/PredicateDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Decorators/AxisDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Decorators/AxisDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Decorators/ConstantClampAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Decorators/ConstantClampAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Decorators/FluidClampAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Decorators/FluidClampAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Decorators/Range.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IValues/Range.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/IAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/IAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Joysticks/JoystickAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Joysticks/JoystickAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantRawKeyAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantRawKeyAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantSmoothKeyAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantSmoothKeyAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Keyboards/FluidRawKeyAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Keyboards/FluidRawKeyAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Keyboards/FluidSmoothKeyAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Keyboards/FluidSmoothKeyAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Mouses/UnClampedMouseAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Mouses/UnClampedMouseAxis.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inputs.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unity/Axis/Swipes/UnClampedSwipeAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Swipes/UnClampedSwipeAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Direction/AxisDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Direction/Axis/AxisDirection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Direction/IDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Direction/IDirection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Direction/MouseDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Direction/Mouse/MouseDirection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unity/Keys/IKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Keys/IKey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Keys/Key.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Keys/Key.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Keys/KeyDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Keys/KeyDown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Keys/KeyUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Keys/KeyUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Keys/Mouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Keys/MouseButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Keys/MouseDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Keys/MouseButtonDown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Keys/MouseUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Keys/MouseButtonUp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +42,13 @@
     <setting file="file://$PROJECT_DIR$/Unity/Axis/IAxis.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Swipes/UnClampedSwipeAxis.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Mouses/UnClampedMouseAxis.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Collections/Collections/IFind.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantSmoothKeyAxis.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unity/Keys/IKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Decorators/ConstantClampAxis.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Decorators/AxisDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Decorators/FluidClampAxis.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Predicates/And.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/IValues/Range.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Keyboards/FluidSmoothKeyAxis.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantSmoothKeyAxis.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -89,6 +57,8 @@
         <option value="$PROJECT_DIR$/Unity/Direction/Decorator/FluidClampDirection.cs" />
         <option value="$PROJECT_DIR$/Unity/Axis/Decorators/Range.cs" />
         <option value="$PROJECT_DIR$/IValues/Range.cs" />
+        <option value="$PROJECT_DIR$/Unity/Keys/IKey.cs" />
+        <option value="$PROJECT_DIR$/Unity/Axis/Swipes/UnClampedSwipeAxis.cs" />
       </list>
     </option>
   </component>
@@ -130,6 +100,7 @@
       <workItem from="1646410265231" duration="12000" />
       <workItem from="1646487169798" duration="134000" />
       <workItem from="1646488648509" duration="1000" />
+      <workItem from="1647371068215" duration="181000" />
     </task>
     <servers />
   </component>

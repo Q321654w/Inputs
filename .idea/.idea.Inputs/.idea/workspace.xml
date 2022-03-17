@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d0cc6a9c-915e-4592-8e58-1db6e9d4b032" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inputs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inputs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Decorators/FluidClampAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Decorators/FluidClampAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantSmoothKeyAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Axis/Keyboards/ConstantSmoothKeyAxis.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity/Direction/Decorator/FluidClampDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Unity/Direction/Decorator/FluidClampDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inputs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inputs.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Unity/Keys/MouseButtonUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Keys/MouseButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Keys/Key.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Predicate/IPredicate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Predicates/IPredicateWithParameter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Keys/IKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Decorators/ConstantClampAxis.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unity/Axis/Decorators/AxisDecorator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -155,6 +154,8 @@
       <workItem from="1646582071255" duration="12000" />
       <workItem from="1646766702374" duration="207000" />
       <workItem from="1647028098199" duration="77000" />
+      <workItem from="1647104631998" duration="195000" />
+      <workItem from="1647104951357" duration="34000" />
     </task>
     <servers />
   </component>

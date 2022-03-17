@@ -1,4 +1,4 @@
-﻿using Predicate;
+﻿using Collections.Predicates.WithOutParameters;
 
 namespace Inputs.Unity.Keys
 {

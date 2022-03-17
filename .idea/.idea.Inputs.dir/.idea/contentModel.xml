@@ -6,24 +6,8 @@
     <e p="C:\Users\PC\RiderProjects\Inputs" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
       <e p="Inputs.csproj" t="IncludeRecursive" />
-      <e p="IValues" t="Include">
-        <e p="DefaultValue.cs" t="Include" />
-        <e p="IRange.cs" t="Include" />
-        <e p="IValue.cs" t="Include" />
-        <e p="Numbers.cs" t="Include" />
-        <e p="Range.cs" t="Include" />
-      </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Predicates" t="Include">
-        <e p="And.cs" t="Include" />
-        <e p="IPredicate.cs" t="Include" />
-        <e p="MultipleAnd.cs" t="Include" />
-        <e p="MultipleOr.cs" t="Include" />
-        <e p="MultiplePredicateDecorator.cs" t="Include" />
-        <e p="Or.cs" t="Include" />
-        <e p="PredicateDecorator.cs" t="Include" />
-      </e>
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
       </e>
