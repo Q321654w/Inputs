@@ -28,10 +28,10 @@ namespace Inputs.Unity.Direction.Axis
             _yAxis = yAxis;
         }
 
-        public Vector2 Evaluate()
+        public Vector2 Direction()
         {
-            var xDirection = _xAxis.Evaluate();
-            var yDirection = _yAxis.Evaluate();
+            var xDirection = _xAxis.Input();
+            var yDirection = _yAxis.Input();
 
             return new Vector2(xDirection, yDirection);
         }

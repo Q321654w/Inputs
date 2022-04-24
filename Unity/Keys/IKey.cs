@@ -1,9 +1,7 @@
-﻿using Collections.Predicates.WithOutParameters;
-
-namespace Inputs.Unity.Keys
+﻿namespace Inputs.Unity.Keys
 {
-    public interface IKey : IPredicate
+    public interface IKey
     {
-        new bool Evaluate();
+        bool HasInput();
     }
 }

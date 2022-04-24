@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Inputs.Unity.Axis.Joysticks
+﻿namespace Inputs.Unity.Axis.Joysticks
 {
     public class JoystickAxis : IAxis
     {
@@ -11,9 +9,9 @@ namespace Inputs.Unity.Axis.Joysticks
             _axisName = axisName;
         }
 
-        public float Evaluate()
+        public float Input()
         {
-            return Input.GetAxis(_axisName);
+            return UnityEngine.Input.GetAxis(_axisName);
         }
     }
 }

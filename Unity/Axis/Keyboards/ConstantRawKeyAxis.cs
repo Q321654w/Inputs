@@ -39,12 +39,12 @@ namespace Inputs.Unity.Axis.Keyboards
             _positiveKey = positiveKey;
         }
 
-        public float Evaluate()
+        public float Input()
         {
-            if (_negativeKey.Evaluate())
+            if (_negativeKey.HasInput())
                 return _negative;
 
-            if (_positiveKey.Evaluate())
+            if (_positiveKey.HasInput())
                 return _positive;
 
             return _null;

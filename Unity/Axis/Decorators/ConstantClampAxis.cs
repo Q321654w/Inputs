@@ -17,9 +17,9 @@ namespace Inputs.Unity.Axis.Decorators
             _positive = positive;
         }
 
-        public override float Evaluate()
+        public override float Input()
         {
-            return Math.Max(Math.Min(ChildAxis.Evaluate(), _positive), _negative);
+            return Math.Max(Math.Min(ChildAxis.Input(), _positive), _negative);
         }
     }
 }

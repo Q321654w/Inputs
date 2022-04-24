@@ -47,12 +47,12 @@ namespace Inputs.Unity.Axis.Keyboards
             _stopwatch = stopwatch;
         }
 
-        public float Evaluate()
+        public float Input()
         {
-            if (_negativeKey.Evaluate())
+            if (_negativeKey.HasInput())
                 return CalculateInput(_negative);
 
-            if (_positiveKey.Evaluate())
+            if (_positiveKey.HasInput())
                 return CalculateInput(_positive);
 
             _stopwatch.Stop();

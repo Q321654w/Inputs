@@ -11,7 +11,7 @@ namespace Inputs.Unity.Direction.Mouse
             _lastMousePosition = Input.mousePosition;
         }
 
-        public Vector2 Evaluate()
+        public Vector2 Direction()
         {
             var currentMousePosition = Input.mousePosition;
             var direction = currentMousePosition - _lastMousePosition;

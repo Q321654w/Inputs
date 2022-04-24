@@ -24,9 +24,9 @@ namespace Inputs.Unity.Axis.Swipes
             _axis = axis;
         }
 
-        public float Evaluate()
+        public float Input()
         {
-            var touches = Input.touches;
+            var touches = UnityEngine.Input.touches;
 
             var hasNotTouch = HasNotTouch(touches);
 

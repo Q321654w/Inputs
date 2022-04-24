@@ -9,6 +9,6 @@ namespace Inputs.Unity.Direction.Decorator
             Child = child;
         }
 
-        public abstract T Evaluate();
+        public abstract T Direction();
     }
 }

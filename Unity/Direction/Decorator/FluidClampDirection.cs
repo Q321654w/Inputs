@@ -13,9 +13,9 @@ namespace Inputs.Unity.Direction.Decorator
             _numbers = numbers;
         }
 
-        public override Vector2 Evaluate()
+        public override Vector2 Direction()
         {
-            var value = Child.Evaluate();
+            var value = Child.Direction();
 
             var max = _numbers.Max().Evaluate();
             var min = _numbers.Min().Evaluate();

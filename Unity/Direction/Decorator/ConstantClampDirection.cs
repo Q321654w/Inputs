@@ -18,9 +18,9 @@ namespace Inputs.Unity.Direction.Decorator
             _positive = positive;
         }
 
-        public override Vector2 Evaluate()
+        public override Vector2 Direction()
         {
-            var value = Child.Evaluate();
+            var value = Child.Direction();
 
             var x = Math.Min(Math.Max(value.x, _positive), _negative);
             var y = Math.Min(Math.Max(value.y, _positive), _negative);

@@ -11,7 +11,7 @@ namespace Inputs.Unity.Keys
             _mouseButton = mouseButton;
         }
 
-        public bool Evaluate()
+        public bool HasInput()
         {
             return Input.GetMouseButtonDown(_mouseButton);
         }

@@ -12,9 +12,9 @@ namespace Inputs.Unity.Axis.Decorators
             _numbers = numbers;
         }
 
-        public override float Evaluate()
+        public override float Input()
         {
-            var value = ChildAxis.Evaluate();
+            var value = ChildAxis.Input();
             var max = _numbers.Max().Evaluate();
             var min = _numbers.Min().Evaluate();
 

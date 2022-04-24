@@ -9,6 +9,6 @@
             ChildAxis = childAxis;
         }
 
-        public abstract float Evaluate();
+        public abstract float Input();
     }
 }

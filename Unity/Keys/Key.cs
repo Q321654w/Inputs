@@ -11,7 +11,7 @@ namespace Inputs.Unity.Keys
             _keyCode = keyCode;
         }
 
-        public bool Evaluate()
+        public bool HasInput()
         {
             return Input.GetKey(_keyCode);
         }

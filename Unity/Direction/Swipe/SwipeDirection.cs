@@ -20,7 +20,7 @@ namespace Inputs.Unity.Direction.Swipe
             _touchIndex = touchIndex;
         }
 
-        public Vector2 Evaluate()
+        public Vector2 Direction()
         {
             var touches = Input.touches;
 

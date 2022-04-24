@@ -30,12 +30,12 @@ namespace Inputs.Unity.Axis.Keyboards
             _numbers = numbers;
         }
 
-        public float Evaluate()
+        public float Input()
         {
-            if (_negative.Evaluate())
+            if (_negative.HasInput())
                 return _numbers.Negative();
             
-            if (_positive.Evaluate())
+            if (_positive.HasInput())
                 return _numbers.Positive();
 
             return _numbers.Null();
